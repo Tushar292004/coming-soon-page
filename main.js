@@ -15,28 +15,28 @@ ScrollReveal().reveal(".container__left .container__btn", {
 
 ScrollReveal().reveal(".container__right h4", {
   ...scrollRevealOption,
-  delay: 800,
+  delay: 2000,
 });
 ScrollReveal().reveal(".container__right h2", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 2500,
 });
 ScrollReveal().reveal(".container__right h3", {
   ...scrollRevealOption,
-  delay: 500,
+  delay: 3000,
 });
 ScrollReveal().reveal(".container__right p", {
   ...scrollRevealOption,
-  delay: 700,
+  delay: 3500,
 });
 
 ScrollReveal().reveal(".container__right .tent-1", {
   duration: 1000,
-  delay: 2000,
+  delay: 4000,
 });
 ScrollReveal().reveal(".container__right .tent-2", {
   duration: 1000,
-  delay: 2000,
+  delay: 4500,
 });
 
 
@@ -44,6 +44,6 @@ ScrollReveal().reveal(".container__right .tent-2", {
 ScrollReveal().reveal(".socials span", {
   ...scrollRevealOption,
   origin: "top",
-  delay: 3500,
+  delay: 5500,
   interval: 500,
 });
