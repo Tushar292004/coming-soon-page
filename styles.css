@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+@font-face {
+  font-family: myCustomFont;
+  src: url(Ahmet\ Altun\ -\ Harman-Sans.otf);
+}
+
 :root {
   --primary-color: #100f0fe4;
   --text-dark: #0cb603d4;
@@ -11,12 +16,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body{
-  height: 100%;
-  background-color: #000;
-  overflow-x: hidden;
 }
 
 .btn {
@@ -37,7 +36,10 @@ a {
 }
 
 body {
+  height: 100%;
+  background-color: #000;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -62,21 +64,19 @@ nav {
 }
 
 #hero-shape {
-  position: absolute;
+  position: fixed;
   width: 30vw;
   height: 40vw;
   right: 0;
   top: -5vh;
 }
 
-
-
 #hero-shape-1 {
-  position: absolute;
+  position: fixed;
   width: 40vw;
   height: 40vw;
   left: -10vw;
-  bottom: -35vh;
+  bottom: 0vh;
 }
 
 #hero-1 {
@@ -85,25 +85,16 @@ nav {
   width: 30vw;
   border-radius: 50%;
   position: absolute;
-  animation-name: anime2;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
   filter: blur(25px);
 }
 
-#hero-2{
+#hero-2 {
   background: linear-gradient(#2b3e09, #5bda30fa);
   height: 40vw;
   width: 40vw;
   border-radius: 50%;
   position: absolute;
-  animation-name: anime1;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+
   filter: blur(25px);
 }
 
@@ -159,6 +150,7 @@ nav {
   background-color: var(--text-dark);
   border-radius: 5rem;
   text-shadow: 0px 0px 5px #1514147d;
+  font-weight: 400;
 }
 
 .container__left .btn:hover {
@@ -192,6 +184,7 @@ nav {
   0% {
     width: 0;
   }
+
   100% {
     width: calc(100% - 2rem);
   }
@@ -207,20 +200,21 @@ nav {
   max-width: 300px;
   transform: translateX(1rem);
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 20px #0cb603;
 }
 
 .tent-2 {
   max-width: 180px;
   transform: translateX(-1rem);
   border-radius: 1rem;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px -1px 20px #0cb603;
 }
 
 .content {
   padding-block: 0 5rem;
   padding-inline: 2rem;
   text-align: center;
+
 }
 
 .content h4 {
@@ -228,14 +222,16 @@ nav {
   font-size: 1rem;
   font-weight: 500;
   color: var(--primary-color);
+  /* padding-left: 10px; */
 }
 
 .content h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
   color: var(--primary-color);
+  /* padding-left: 10px; */
 }
 
 .content h3 {
@@ -243,37 +239,13 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary-color);
+  /* padding-left: 10px; */
 }
 
 .content p {
-  text-shadow: 0px 0px 5px #1514147d;
   line-height: 1.75rem;
   color: var(--primary-color);
-}
-
-.location {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  padding: 1rem 2rem 1rem 1rem;
-  border-radius: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  background-color: var(--primary-color);
-  border: 10px solid var(--black);
-  border-bottom: none;
-}
-
-.location span {
-  padding: 5px 10px;
-  font-size: 1.5rem;
-  color: var(--text-dark);
-  background-color: var(--black);
-  border-radius: 10px;
+  /* padding-left: 10px; */
 }
 
 .socials {
@@ -288,6 +260,37 @@ nav {
 .socials a {
   font-size: 1.25rem;
   color: #000;
+}
+
+.counter {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  justify-content: center
+}
+
+.counter .count {
+  flex-direction: column;
+  color: var(--dark);
+  background: var(--off-white);
+  width: 70px;
+  border-radius: .35rem;
+  padding: 10px;
+}
+
+.counter .count span.digit {
+  font-size: clamp(1.35rem, 2vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--primary);
+  /* text-shadow: 0px 0px 2px var(--primary); */
+}
+
+.counter .count span {
+  opacity: .80;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-transform: uppercase;
 }
 
 @media (width > 768px) {
@@ -334,7 +337,7 @@ nav {
 
 @media (width > 1024px) {
 
-  body{
+  body {
     overflow: hidden;
   }
 
@@ -367,13 +370,15 @@ nav {
 
   .tent-1 {
     width: calc(100% + 10rem);
-    max-width: 325px;
+    max-width: 350px;
     transform: translate(-2rem, 2rem);
+    box-shadow: -2px -1px 20px #0cb603;
   }
 
   .tent-2 {
     max-width: 200px;
     transform: translate(4rem, -1rem);
+    box-shadow: -1px 0px 20px #0cb603;
   }
 
   .content {
@@ -383,7 +388,36 @@ nav {
     margin-inline-start: unset;
   }
 
-  .socials a{
+  .socials a {
     color: var(--text-dark);
+  }
+
+  #hero-1{
+    animation-name: anime2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+
+  #hero-2{
+    animation-name: anime2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  }
+
+  .content h4 {
+    padding-left: 2.5vw;}
+
+  .content h2 {
+    padding-left: 2.5vw;}
+
+  .content h3 {
+    padding-left: 2.5vw;}
+
+  .content p {
+    padding-left: 2.5vw;
   }
 }
