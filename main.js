@@ -15,28 +15,28 @@ ScrollReveal().reveal(".container__left .container__btn", {
 
 ScrollReveal().reveal(".container__right h4", {
   ...scrollRevealOption,
-  delay: 2000,
+  delay: 800,
 });
 ScrollReveal().reveal(".container__right h2", {
   ...scrollRevealOption,
-  delay: 2500,
+  delay: 900,
 });
 ScrollReveal().reveal(".container__right h3", {
   ...scrollRevealOption,
-  delay: 3000,
+  delay: 900,
 });
 ScrollReveal().reveal(".container__right p", {
   ...scrollRevealOption,
-  delay: 3500,
+  delay: 1000,
 });
 
 ScrollReveal().reveal(".container__right .tent-1", {
   duration: 1000,
-  delay: 4000,
+  delay: 2000,
 });
 ScrollReveal().reveal(".container__right .tent-2", {
   duration: 1000,
-  delay: 4500,
+  delay: 2000,
 });
 
 
