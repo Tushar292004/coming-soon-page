@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #100f0fe4;
-  --text-dark: #0cb603;
+  --text-dark: #0cb603d4;
   /* --black: #ffffff; */
   --max-width: 1200px;
 }
