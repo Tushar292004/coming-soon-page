@@ -19,15 +19,15 @@ ScrollReveal().reveal(".container__right h4", {
 });
 ScrollReveal().reveal(".container__right h2", {
   ...scrollRevealOption,
-  delay: 900,
+  delay: 500,
 });
 ScrollReveal().reveal(".container__right h3", {
   ...scrollRevealOption,
-  delay: 900,
+  delay: 500,
 });
 ScrollReveal().reveal(".container__right p", {
   ...scrollRevealOption,
-  delay: 1000,
+  delay: 700,
 });
 
 ScrollReveal().reveal(".container__right .tent-1", {
@@ -44,6 +44,6 @@ ScrollReveal().reveal(".container__right .tent-2", {
 ScrollReveal().reveal(".socials span", {
   ...scrollRevealOption,
   origin: "top",
-  delay: 5500,
+  delay: 3500,
   interval: 500,
 });
