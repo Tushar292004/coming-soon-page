@@ -14,6 +14,7 @@
 }
 
 body{
+  height: 100%;
   background-color: #000;
 }
 
@@ -74,7 +75,7 @@ nav {
   width: 40vw;
   height: 40vw;
   left: -10vw;
-  bottom: -25vh;
+  bottom: -35vh;
 }
 
 #hero-1 {
@@ -274,8 +275,8 @@ nav {
 
 .socials {
   position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2.5rem;
+  right: 2.5rem;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -329,12 +330,21 @@ nav {
 }
 
 @media (width > 1024px) {
+
+  body{
+    overflow: hidden;
+  }
+
   #hero-shape {
     position: absolute;
     width: 26vw;
     height: 26vw;
     right: 0;
     top: -30vh;
+  }
+
+  #hero-shape-1 {
+    bottom: -25vh;
   }
 
   .container__right {
@@ -368,5 +378,9 @@ nav {
     text-align: left;
     max-width: 400px;
     margin-inline-start: unset;
+  }
+
+  .socials a{
+    color: var(--text-dark);
   }
 }

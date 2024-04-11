@@ -44,6 +44,6 @@ ScrollReveal().reveal(".container__right .tent-2", {
 ScrollReveal().reveal(".socials span", {
   ...scrollRevealOption,
   origin: "top",
-  delay: 5500,
+  delay: 3500,
   interval: 500,
 });
