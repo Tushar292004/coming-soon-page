@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary-color: #ABD699;
-  --text-dark: #0cb603d4;
+  --primary-color: #000;
+  --text-dark: #ABD699;
   /* --black: #ffffff; */
   --max-width: 1200px;
 }
