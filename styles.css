@@ -223,14 +223,14 @@ nav {
   max-width: 60vw;
   transform: translateX(1rem);
   border-radius: 1rem;
-  box-shadow: 0px 0px 20px #0cb603;
+  box-shadow: 0px 0px 20px #0e5e0a;
 }
 
 .tent-2 {
   max-width: 45vw;
   transform: translateX(-1rem);
   border-radius: 1rem;
-  box-shadow: 1px -1px 20px #0cb603;
+  box-shadow: 1px -1px 20px #0e5e0a;
 }
 
 .content {
@@ -397,7 +397,7 @@ nav {
     left: -2vw;
     width: calc(100% + 10rem);
     max-width: 350px;
-    box-shadow: -2px -1px 20px #0cb603;
+    box-shadow: -2px -1px 20px #0e5e0a;
   }
 
   .tent-2 {
@@ -405,7 +405,7 @@ nav {
     left: 4vw;
     position: relative;
     max-width: 200px;
-    box-shadow: -1px 0px 20px #0cb603;
+    box-shadow: -1px 0px 20px #0e5e0a;
   }
 
   .content {
