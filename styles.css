@@ -103,7 +103,7 @@ nav {
 }
 
 #hero-1 {
-  background: linear-gradient(#5bda30fa, #2b3e09);
+  background: linear-gradient(#2b3e09, #0e5e0a);
   height: 30vw;
   width: 30vw;
   border-radius: 50%;
@@ -112,7 +112,7 @@ nav {
 }
 
 #hero-2 {
-  background: linear-gradient(#2b3e09, #5bda30fa);
+  background: linear-gradient(#2b3e09, #0e5e0a);
   height: 40vw;
   width: 40vw;
   border-radius: 50%;
