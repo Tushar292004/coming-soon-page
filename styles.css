@@ -18,6 +18,29 @@
   box-sizing: border-box;
 }
 
+/* Add fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in animation to specific elements */
+.fade-in {
+    animation: fade-in 0.5s ease forwards;
+}
+
+/* Add delay for each element */
+.container__left h1, .container__left .container__btn, #hero-shape, #hero-shape-1, .container__right .tent-1, .container__right .tent-2, .container__right h4, .container__right h2, .container__right h3, .container__right p, .counter, .socials span {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
 .btn {
   outline: none;
   border: none;
@@ -369,15 +392,19 @@ nav {
   }
 
   .tent-1 {
+    top: 4vh;
+    position: relative;
+    left: -2vw;
     width: calc(100% + 10rem);
     max-width: 350px;
-    transform: translate(-2rem, 2rem);
     box-shadow: -2px -1px 20px #0cb603;
   }
 
   .tent-2 {
+    top: -2vh;
+    left: 4vw;
+    position: relative;
     max-width: 200px;
-    transform: translate(4rem, -1rem);
     box-shadow: -1px 0px 20px #0cb603;
   }
 
