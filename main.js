@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (remaining < 0) {
       document.querySelector(".content_para").innerHTML = "The big day is finally here <a href=#> view here </a>";
       document.querySelector(".btn").innerHTML =
-        "<a href= "propertys-landing-page.vercel.app">VIEW HERE</a>";
+        "<a herf=# >VIEW HERE</a>";
       const digits = document.querySelectorAll(".digit");
       digits.forEach((digit) => {
         digit.innerHTML = "00";
